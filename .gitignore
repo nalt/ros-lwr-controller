@@ -11,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+# nalt
+.svn
+.DS_Store
