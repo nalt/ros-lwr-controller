@@ -1,0 +1,80 @@
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [-0.5117412922393225, 0.8476302623047464, -0.054277729581695924,
+    -0.12921964368419964]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [-0.5237813146666369, 0.8011251296938826, -0.11964186184923435,
+    -0.26369961295439553]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [-0.43392028434109847, 0.8164711187749875, -0.3289823090906539,
+    -0.19198629989934693]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [-0.4747125026468172, 0.7860921944621181, -0.39528241784680934,
+    0.02142222625470079]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [-0.5628948873461244, 0.7842222635382254, -0.13516818103122433,
+    0.22332565908844068]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [-0.5760339835392214, 0.7717574554611749, 0.049754604909113466,
+    0.2647635908473194]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [-0.6288767052032753, 0.6923400876786882, 0.2833340770166678, 0.21189878113583446]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [0.7534389347224544, -0.6047599177080871, -0.25613814257335343,
+    -0.03143987113639813]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [0.9172686821529207, -0.27688927344458947, -0.28222052895563127,
+    0.047979871079183764]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.40, -0.40, 0.16]
+  - !!python/tuple [0.9166428164750211, -0.2988228060314193, -0.24674572320599425,
+    0.09791540062625759]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [0.08111167952712023, -0.8110892727116571, 0.18127387024386848]
+  - !!python/tuple [0.4902041464279326, -0.5267214331068775, 0.6836073060707222, 0.12225169862799141]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [0.14880166624056224, -0.9267950395097428, 0.18437052929699455]
+  - !!python/tuple [0.5047871318361394, -0.5311643165457663, 0.6600160922509796, 0.16562964206584294]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [0.04673918228939242, -0.7759828474310813, 0.17360009654828906]
+  - !!python/tuple [0.8140026423005402, -0.40541702083695463, 0.36601402064269983,
+    0.1976625261307577]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [0.10917611578275371, -0.8669854398703369, 0.1874521880192376]
+  - !!python/tuple [0.7925728197800396, -0.4439929432922067, 0.3713930652926471, 0.19174405520164606]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.023239276145117505, -0.7325244207684853, 0.17448889453294097]
+  - !!python/tuple [0.5971161850119757, -0.4712304257315311, 0.22383214091993794,
+    0.6093384282587311]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [0.04946911880446053, -0.8290047774958963, 0.22401707411388566]
+  - !!python/tuple [0.519236934049769, -0.5294361635133299, 0.3141155491355389, 0.5928083812448683]
+- !!python/object/new:geometry_msgs.msg._Pose.Pose
+  state:
+  - !!python/tuple [-0.09981263706256716, -0.3671572705512521, 0.9190798287773146]
+  - !!python/tuple [-0.024366900472105425, 0.033926957721371255, -0.3999761783077056,
+    0.9155731934081062]

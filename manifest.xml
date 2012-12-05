@@ -1,13 +1,13 @@
 <package>
   <description brief="lmtlwr">
 
-     lmtlwr
+     ROS Driver for the KUKA LWR arm
 
   </description>
-  <author>Nicolas</author>
-  <license>BSD</license>
+  <author>Nicolas Alt</author>
+  <license>License: See License.txt. If missing, contact  n.alt -at- tum.de</license>
   <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/lmtlwr</url>
+  <url>TBD</url>
   
   <depend package="roscpp" />
   <depend package="rospy" />

@@ -1,0 +1,79 @@
+/**
+\mainpage
+\htmlinclude manifest.html
+
+
+\section ll LWRLMT - the driver node for the LWR arm
+
+\section gs Getting started
+Start the launch-file lmwlwr.launch. This runs the robot_state_publisher, the robot model (defined in ./model) and a kinematic solver.
+Then run this controller manually with sudo rights - the command will be printed by the launch file.
+The robot should be ready with the control script running. Start rviz seperately to monitor the state.
+Several Python files are included to move the robot arm.
+For cartesian control, look at the test_ik.py sample.
+
+\subsection pa Parameters
+- \c fri_init_file: Init-file for the FRIlibrary
+- \c status_frequency: Sets the update frequency for ROS messages to \f$ x \cdot FRI-rate \f$.
+- \c joint_names:  Names of the joints, should be lwr_arm_%u_joint for the current model
+- \c TODO speed limits:
+- \c TODO impedence parameters
+- \c TODO Timeout parameter (e.g. for velocity_cartesian message)
+
+\subsection me1 Messages OUT
+- \c joint_states (sensor_msgs::JointState): Current measured positions of the joints as communicated by the FRI.
+- \c force (geometry_msgs::PoseStamped): Cartesian force measured by the LWR or JR-3 (selection see TODO). TODO: Gravity compensation?
+- \c force_visual (visualization_msgs::Marker): Arrow showing the measured force; for visualization in rviz only.
+- \c pose_tool (geometry_msgs::PoseStamped): Cartesian pose from the FRI interface.
+The reference frame depend on the LWR configuration and may be changed by an LWR script.
+ROS calculates all positions using the robot_state_publisher, so thos information is redundant.
+
+\subsection me2 Messages IN and Actions
+- \c velocity_cartesian (geometry_msgs::PoseStamped):
+  Moves the arm with the given speed in cartesian space and puts the robot into cartesian impedance mode.
+  Send messages regularly, otherwise the arm will stop.
+  TODO: Rotation is currently done in the end-effector frame; speed limits and acceleration; soft breaking
+- \c target_path (nav_msgs::Path): Moves the robot along a trajectory in cartesian space and puts the robot into cartesian impedance mode.
+- \c joint_trajectory_action (control_msgs::FollowJointTrajectoryAction using trajectory_msgs::JointTrajectoryPoint):
+Action that moves the robot along the points defined in the trajectory in joint space.
+The given velocities and accelerations are considered; the given timing is ignored.
+- \c jr3_zero (Empty): Zeros the JR-3 force sensor - i.e. that the current force is internally defined as zero.
+- \c force_limit_element (geometry_msgs::PoseStamped): Activate force limitation and stops the robot when the defined per-element force is exceeded.
+
+
+
+\subsection rt Realtime
+Using the RR scheduler prevents stops due to bad communication quality:
+chrt -r -p 99 &lt;pid&gt; (?)
+
+
+\section sc Scripts
+
+There are a few demo Python scripts which control the robot.
+See description in the files tab.
+
+
+\section Links
+
+ROS arm_nagivation: http://www.ros.org/wiki/arm_navigation/Tutorials
+
+Inverse kinematics: http://www.ros.org/wiki/arm_navigation/Tutorials/Running%20arm%20navigation%20on%20non-PR2%20arm
+
+URDF: http://www.ros.org/wiki/urdf/Tutorials, http://www.ros.org/wiki/urdf/Tutorials/Create%20your%20own%20urdf%20file
+
+
+\section codeapi Code API
+
+<!--
+Provide links to specific auto-generated API documentation within your
+package that is of particular interest to a reader. Doxygen will
+document pretty much every part of your code, so do your best here to
+point the reader to the actual API.
+
+If your codebase is fairly large or has different sets of APIs, you
+should use the doxygen 'group' tag to keep these APIs together. For
+example, the roscpp documentation has 'libros' group.
+-->
+
+
+*/

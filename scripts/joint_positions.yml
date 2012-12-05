@@ -1,0 +1,22 @@
+- name: 'Home'
+  position: [0, 0, 0, 0, 0, 0, 0]
+- name: "Point high corner"
+  position: [-15, 45, 0, -30, 0, 15, 0]
+- name: "Point up corner"
+  position: [-15, 45, -120, -10, 0, 15, 0]
+- name: "Point to window fast"
+  position: [0, 90, -30, 90, 0, -45, 0]
+  velocity: [ 100, 100, 100, 100, 100, 100, 100 ]
+  acceleration: [ 200, 200, 200, 200, 200, 200, 200 ]
+- name: "Sampling on table"
+  position: [30, 40, 0, -90, 0, 50, 0]
+- name: "Sampling on Window Wall Mid"
+  position: [120, 60, 0, -90, 0, -60, 0]
+- name: "Low streched"
+  position: [ 30, 90, 0, 0, 0, 0, 0 ]
+- name: "Low streched E1 FAST"
+  position: [ 30, 90, 150, 0, 0, 0, 0 ]
+  velocity: [ 120, 120, 120, 120, 120, 120, 120 ]
+  acceleration: [ 200, 200, 200, 200, 200, 200, 200 ]
+- name: "Sampling on Window Wall Front"
+  position: [80, 70, 0, -65, -52, -60, 0]
