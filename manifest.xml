@@ -1,0 +1,28 @@
+<package>
+  <description brief="lmtlwr">
+
+     lmtlwr
+
+  </description>
+  <author>Nicolas</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/lmtlwr</url>
+  
+  <depend package="roscpp" />
+  <depend package="rospy" />
+  <depend package="actionlib" />
+  <depend package="trajectory_msgs" />
+  <depend package="control_msgs" />
+  <depend package="sensor_msgs" />
+  <depend package="geometry_msgs" />
+  <depend package="visualization_msgs" />
+  <depend package="tf" />
+  <depend package="kdl" />
+  <depend package="tf_conversions" />
+
+  <depend package="kinematics_msgs" />
+  <depend package="arm_navigation_msgs" />
+</package>
+
+

@@ -1,0 +1,23 @@
+<launch>
+    <node pkg="lmtlwr" type="lwrcontroller" name="lwrcontroller" output="screen" launch-prefix="echo Run manually: sudo -E">
+        <param name="fri_init_file" type="string" value="$(find lmtlwr)/FRI-Driver.init" />
+        <param name="status_frequency" type="int" value="5" />
+        <param name="joint_names" type="string" value="lwr_arm_%u_joint" />
+    </node>
+
+  <!-- Robot description & state publisher -->
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find lmtlwr)/model/arm_base.urdf.xacro'" />
+  <!-- remap from="lwrcontroller/joint_states" to="joint_states"/-->
+  <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+	<param name="publish_frequency" type="double" value="50.0" />
+	<param name="tf_prefix" type="string" value="" />
+  </node>
+
+  <node pkg="arm_kinematics" type="arm_kinematics" name="lwr_kinematics" output="screen">
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find lmtlwr)/model/arm_base.urdf.xacro'" />
+    <param name="free_angle" type="int" value="2" />
+    <param name="root_name" type="string" value="calib_lwr_arm_base_link" />
+    <param name="tip_name" type="string" value="lwr_arm_7_link" />
+  </node>
+
+</launch>
